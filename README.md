@@ -20,7 +20,7 @@ You can install the development version from GitHub with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("jobstdavid/boostCopula", auth_token = "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")
+remotes::install_github("jobstdavid/boostCopula", auth_token = "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")
 ```
 
 ## Package overview
