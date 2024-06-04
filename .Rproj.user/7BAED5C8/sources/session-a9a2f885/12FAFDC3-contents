@@ -1,0 +1,27 @@
+Package: boostCopula
+Type: Package
+Title: Gradient-Boosted Estimation of Generalized Linear Models for Conditional Vine Copulas
+Version: 0.1.0
+Authors@R: c(
+    person(given = "David",
+           family = "Jobst",
+           role = c("aut", "cre"),
+           email = "jobstd@uni-hildesheim.de",
+           comment = c(ORCID = "0000-0002-2014-3530")))
+Maintainer: David Jobst <jobstd@uni-hildesheim.de>
+Description: Implements gradient-boosting estimation of generalized linear models for conditional vine copulas.
+URL: https://github.com/jobstdavid/boostCopula
+BugReports: https://github.com/jobstdavid/boostCopula/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    VineCopula,
+    parallel,
+    Rfast,
+    Rcpp,
+    colorspace
+LinkingTo: 
+    Rcpp, 
+    RcppEigen

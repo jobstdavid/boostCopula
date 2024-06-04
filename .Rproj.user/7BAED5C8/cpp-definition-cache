@@ -1,0 +1,39 @@
+[
+    {
+        "file": "/Users/david/Desktop/boostCopula/src/matrix_operations.cpp",
+        "file_last_write": 1717444916.0,
+        "definitions": [
+            {
+                "usr": "c:@F@matvecmult_eigen#1$@N@Eigen@S@Map>#$@N@Eigen@S@Matrix>#d#VI-1#VI-1#VI0#VI-1#VI-1#VI0#$@N@Eigen@S@Stride>#VI0#VI0#1$@N@Eigen@S@Map>#$@N@Eigen@S@Matrix>#d#VI-1#VI1#VI0#VI-1#VI1#VI0#S2_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "matvecmult_eigen(const Eigen::Map<Eigen::MatrixXd>, const Eigen::Map<Eigen::VectorXd>, int)",
+                "file": "/Users/david/Desktop/boostCopula/src/matrix_operations.cpp",
+                "line": 6,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@matTvecmult_eigen#1$@N@Eigen@S@Map>#$@N@Eigen@S@Matrix>#d#VI-1#VI-1#VI0#VI-1#VI-1#VI0#$@N@Eigen@S@Stride>#VI0#VI0#1$@N@Eigen@S@Map>#$@N@Eigen@S@Matrix>#d#VI-1#VI1#VI0#VI-1#VI1#VI0#S2_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "matTvecmult_eigen(const Eigen::Map<Eigen::MatrixXd>, const Eigen::Map<Eigen::VectorXd>, int)",
+                "file": "/Users/david/Desktop/boostCopula/src/matrix_operations.cpp",
+                "line": 16,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@matmatTmult_eigen#1$@N@Eigen@S@Map>#$@N@Eigen@S@Matrix>#d#VI-1#VI-1#VI0#VI-1#VI-1#VI0#$@N@Eigen@S@Stride>#VI0#VI0#1S0_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "matmatTmult_eigen(const Eigen::Map<Eigen::MatrixXd>, const Eigen::Map<Eigen::MatrixXd>, int)",
+                "file": "/Users/david/Desktop/boostCopula/src/matrix_operations.cpp",
+                "line": 26,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]
