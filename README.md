@@ -161,4 +161,5 @@ questions or suggestions.
 ## References
 
 Jobst, D., Möller, A., and Groß, J. (2024). Gradient-Boosted Generalized
-Linear Models for Conditional Vine Copulas. doi:.
+Linear Models for Conditional Vine Copulas. doi:
+[10.48550/arXiv.2406.13500](https://arxiv.org/abs/2406.13500).
