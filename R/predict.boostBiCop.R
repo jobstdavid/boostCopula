@@ -33,18 +33,20 @@ predict.boostBiCop <- function(object, newdata, type = "parameter", ...) {
   if (!missing(newdata)) {
 
     covs <- names(object$coefficients)
-    index_intercept <- which(covs == "(Intercept)")
+    # `setdiff`, not `covs[-index]`: a model without an intercept has no index
+    # to drop, and `-integer(0)` would select no covariate at all.
+    vars <- setdiff(covs, "(Intercept)")
 
     # check model matrix (faster than model.matrix)
-    if (any(!covs[-index_intercept] %in% colnames(newdata))) {
+    if (any(!vars %in% colnames(newdata))) {
         stop("Covariates in 'newdata' do not match with covariates in 'coefficients'!")
     }
-    X <- newdata[, covs[-index_intercept]]
+    X <- as.matrix(newdata[, vars, drop = FALSE])
 
-    if (length(index_intercept) > 0) {
-      X <- as.matrix(cbind(1, X))
-      colnames(X)[1] <- "(Intercept)"
+    if ("(Intercept)" %in% covs) {
+      X <- cbind("(Intercept)" = 1, X)
     }
+    X <- X[, covs, drop = FALSE]
 
   } else {
     if (!"model_frame" %in% names(object)) {
